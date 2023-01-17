@@ -1,7 +1,7 @@
 FROM node:16-slim AS builder
 WORKDIR /usr/src/app
 RUN ls -alh
-COPY . .
+COPY /workspace/source/game-2048-example .
 RUN npm install --include=dev
 #
 # Build mode can be set via NODE_ENV environment variable (development or production)
