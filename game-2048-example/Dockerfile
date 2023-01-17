@@ -5,7 +5,7 @@ COPY game-2048-example .
 RUN npm install --include=dev
 #
 # Build mode can be set via NODE_ENV environment variable (development or production)
-# See project package.json and webpack.config.js 
+# See project package.json and webpack.config.js
 #
 ENV NODE_ENV=development
 RUN npm run build
