@@ -1,5 +1,6 @@
 FROM node:16-slim AS builder
 WORKDIR /usr/src/app
+RUN ls -alh
 COPY . .
 RUN npm install --include=dev
 #
